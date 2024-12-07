@@ -45,12 +45,12 @@ export default function AnalyticsPage() {
             <h3 className="text-2xl font-bold">2.5h</h3>
           </CardBody>
         </Card>
-        <Card>
+        {/* <Card>
           <CardBody>
             <p className="text-sm text-gray-500">Satisfacción Cliente</p>
             <h3 className="text-2xl font-bold">4.8/5</h3>
           </CardBody>
-        </Card>
+        </Card> */}
       </div>
 
       <div className="grid grid-cols-2 gap-6">

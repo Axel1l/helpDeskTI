@@ -18,7 +18,7 @@ export default function RegisterPage() {
 
   // Los roles están definidos directamente en el componente
   const roles = [
-    { value: 'AGENT', label: 'Agente' },
+    { value: 'AGENT', label: 'Agente de Soporte' },
     { value: 'USER', label: 'Usuario' }
   ];
 
@@ -113,17 +113,17 @@ export default function RegisterPage() {
               </div>
 
               <Select
-              label="Tipo de cuenta"
-              placeholder="Selecciona tu rol"
-              value={formData.role}
-              onChange={(value) => setFormData({ ...formData, role: value })}
-            >
-              {roles.map((role) => (
-                <SelectItem key={role.value} value={role.value}>
-                  {role.label}
-                </SelectItem>
-              ))}
-            </Select>
+  label="Tipo de cuenta"
+  placeholder="Selecciona tu rol"
+  value={formData.role}
+  onChange={(value) => setFormData({ ...formData, role: value })} // Captura solo el valor
+>
+  {roles.map((role) => (
+    <SelectItem key={role.value} value={role.value}>
+      {role.label}
+    </SelectItem>
+  ))}
+</Select>
 
               <Button
                 color="primary"
